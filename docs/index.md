@@ -14,7 +14,9 @@
 
 OU
 
-> **pip install flask** >**pip install cachetools**
+> **pip install flask** > <br/>
+
+> **pip install cachetools**
 
 ## 2º Codificação
 
