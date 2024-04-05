@@ -2,14 +2,15 @@
 
 ## 1º Passo: Configurar o Ambiente
 
-**1º**
+> Passo a Passo Configuração
 
-> Criar um novo repositório no GitHub para o seu projeto.
-> **2º**
-> Clonar o repositório
-> **3º** >**Instalar as dependências**
+### 1º Criar um novo repositório no GitHub para o seu projeto;
 
-pip install -r requirements.txt
+### 2º Clonar o repositório;
+
+### 3º Instalar as dependências.
+
+> **pip install -r requirements.txt**
 
 OU
 
@@ -57,40 +58,37 @@ OU
 
 # **3ºExecutar aplicação**
 
-> com o comando `python app.py` e teste o endpoint `/users` com método `GET` para verificar o funcionamento do cache.
+> 1º Rodar comando `python app.py` no terminal
+> 2º Testar o endpoint `/users` com método `GET` para validar o cache.
 
 <br/>
 
 # 1º **Sem Cache**
 
 ```json
-    Sem cache
+{
+  "data": [
     {
-        "data": [
-           {
-                "e-mail": "luanc7459@gmail.com",
-                "nome": "Luan Carvalho"
-            }
-
-        ],
-        "request_time": 2
+      "e-mail": "luanc7459@gmail.com",
+      "nome": "Luan Carvalho"
     }
+  ],
+  "request_time": 2
+}
 ```
 
-#2
+# 2 **Com Cache**
 
 ```json
-    Com cache
+{
+  "dados": [
     {
-        "dados": [
-            {
-                "e-mail": "luanc7459@gmail.com",
-                "nome": "Luan Carvalho"
-            }
-
-        ],
-        "request_time": 0.0
+      "e-mail": "luanc7459@gmail.com",
+      "nome": "Luan Carvalho"
     }
+  ],
+  "request_time": 0.0
+}
 ```
 
 # Contribuição
