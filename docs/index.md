@@ -61,7 +61,7 @@ OU
 
 # **3ºExecutar aplicação**
 
-> 1º Rodar comando `python app.py` no terminal
+> 1º Rodar comando `python app.py` no terminal;
 > <br/>
 
 > 2º Testar o endpoint `/users` com método `GET` para validar o cache.
