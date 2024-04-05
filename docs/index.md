@@ -31,9 +31,10 @@ OU
 
  def database_mock():
      "Simula uma requisição demorada ao banco de dados."
-     time.sleep(2)
+     time.sleep(5)
      return [
-         {"nome": "Luan Carvalho", "e-mail": "luanc7459@gmail.com"},
+         {"nome": "Luan Carvalho", "email": "luanc7459@gmail.com"},
+         {"nome":"teste", "email": "teste@gmail.com" }
      ]
 
 
@@ -59,6 +60,8 @@ OU
 # **3ºExecutar aplicação**
 
 > 1º Rodar comando `python app.py` no terminal
+> <br/>
+
 > 2º Testar o endpoint `/users` com método `GET` para validar o cache.
 
 <br/>
@@ -69,27 +72,37 @@ OU
 {
   "data": [
     {
-      "e-mail": "luanc7459@gmail.com",
+      "email": "luanc7459@gmail.com",
       "nome": "Luan Carvalho"
+    },
+    {
+      "email": "teste@gmail.com",
+      "nome": "Joaquim Gomes"
     }
   ],
   "request_time": 2
 }
 ```
 
-# 2 **Com Cache**
+# 2º **Com Cache**
 
 ```json
 {
   "dados": [
     {
-      "e-mail": "luanc7459@gmail.com",
+      "email": "luanc7459@gmail.com",
       "nome": "Luan Carvalho"
+    },
+    {
+      "email": "teste@gmail.com",
+      "nome": "Joaquim Gomes"
     }
   ],
   "request_time": 0.0
 }
 ```
+
+> Nota-se que com cache a requisição fica mais rápida, pois é utilizada uma resposta associada a uma solicitação e reutiliza a resposta armazenada para solicitações subsequentes.
 
 # Contribuição
 
