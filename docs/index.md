@@ -14,7 +14,7 @@
 
 OU
 
-> **pip install flask** > <br/>
+> **pip install flask** <br/>
 
 > **pip install cachetools**
 
