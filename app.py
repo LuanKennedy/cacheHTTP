@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def database_mock():
     "Simula uma requisição demorada ao banco de dados."
-    time.sleep(5)
+    time.sleep(3)
     return [
         {"nome": "Luan Carvalho", "email": "luanc7459@gmail.com"},
         {"nome":"teste", "email": "teste@gmail.com" }
