@@ -2,13 +2,13 @@
 
 ## 1º Passo: Configurar o Ambiente
 
-> Passo a Passo Configuração
+- Passo a Passo Configuração
 
-### 1º Criar um novo repositório no GitHub para o seu projeto;
+- 1º Criar um novo repositório no GitHub para o seu projeto;
 
-### 2º Clonar o repositório;
+- 2º Clonar o repositório;
 
-### 3º Instalar as dependências.
+- 3º Instalar as dependências.
 
 > **pip install -r requirements.txt**
 
