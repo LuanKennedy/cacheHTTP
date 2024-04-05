@@ -2,7 +2,7 @@
 
 ## 1º Passo: Configurar o Ambiente
 
-**Passo a Passo Configuração**
+**Passo a Passo: Configuração**
 
 - 1º Criar um novo repositório no GitHub para o seu projeto;
 
