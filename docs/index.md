@@ -90,14 +90,14 @@ OU
 
 ```json
 {
-  "dados": [
+  "data": [
     {
       "email": "luanc7459@gmail.com",
       "nome": "Luan Carvalho"
     },
     {
       "email": "teste@gmail.com",
-      "nome": "Joaquim Gomes"
+      "nome": "teste"
     }
   ],
   "request_time": 0.0
